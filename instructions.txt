@@ -1,0 +1,20 @@
+# install pipenv
+pip install pipenv
+
+# Create virtual env
+pipenv --python 3.10
+
+# Activate the env
+pipenv shell
+
+# Install django
+pipenv install django  || pip install django
+
+# Create django project
+django-admin startproject odc .
+
+# Run django server
+python manage.py runserver
+
+# Create an application
+python manage.py startapp hello
